@@ -61,7 +61,9 @@ cr.plugins_.EthereumContract = function(runtime)
 		var contractAddress;
 		
 		switch (web3.version.network)
-		{
+		{ 
+			//Expanse
+			case "2": contractAddress = this.properties[1]; break;	
 			//Mainnet
 			case "1": contractAddress = this.properties[1]; break;
 			//Ropsten
